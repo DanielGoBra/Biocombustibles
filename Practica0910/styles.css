@@ -35,7 +35,7 @@
     padding: 15px;
     margin: 0 5px;
     border: 1px solid #ccc;
-    background-color: #ffff99; /* Amarillo claro */
+    background-color: #fdffc0; /* Amarillo claro */
   }
 
   .navbar .button {
@@ -43,7 +43,7 @@
     text-align: center;
     padding: 15px;
     margin: 0 5px;
-    background-color: #ffff99; /* Amarillo claro */
+    background-color: #fdffc0; /* Amarillo claro */
     border: 1px solid #ccc;
     color: black;
     text-decoration: none; /* Sin subrayado para el enlace */
@@ -62,7 +62,7 @@
   .header {
     text-align: center;
     padding: 20px;
-    background-color: #ccffcc; /* Verde claro */
+    background-color: #004106; /* Verde claro */
     border: 1px solid #ccc;
   }
   
@@ -80,7 +80,7 @@
   
   .content .left {
     flex: 1;
-    background-color: #ffff99; /* Amarillo claro */
+    background-color: #fdffc0; /* Amarillo claro */
     text-align: center;
     margin-right: 10px;
   }
@@ -94,8 +94,8 @@
   
   .content .right {
     flex: 2;
-    background-color: #ccffcc; /* Verde claro */
-    border: 2px solid #4caf50;
+    background-color: #fdffc0; /* Verde claro */
+    border: 2px solid #004106;
   }
   
   
