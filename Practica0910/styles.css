@@ -11,34 +11,14 @@
     font-family: Arial, sans-serif;
     background-color: #f9f9f9;
   }
-  
-  .container {
-    height: 100%;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    border: 2px solid #ccc;
-    background-color: #fff;
-  }
-  
-  /* Navbar */
   .navbar {
     display: flex;
     justify-content: space-between;
     padding: 10px;
     background-color: #ffcc80; /* Naranja claro */
   }
-  
-  .navbar div {
-    flex: 1;
-    text-align: center;
-    padding: 15px;
-    margin: 0 5px;
-    border: 1px solid #ccc;
-    background-color: #fdffc0; /* Amarillo claro */
-  }
 
-  .navbar .button {
+.navbar .button {
     flex: 1;
     text-align: center;
     padding: 15px;
@@ -50,52 +30,52 @@
     cursor: pointer;
   }
 
-  .navbar .button:hover {
+.navbar .button:hover {
     background-color: #ffdd99; /* Cambia el color al pasar el mouse */
   }
-  
-  a.button {
+
+a.button {
     display: inline-block; /* Permite que los <a> se comporten como botones */
   }
-  
-  /* Header */
-  .header {
+
+/* Encabezado */
+.header {
     text-align: center;
     padding: 20px;
-    background-color: #004106; /* Verde claro */
-    border: 1px solid #ccc;
+    background-color: #004106; /* Verde */
+    color: white;
   }
-  
-  /* Content */
-  .content {
-    flex: 1;
+
+/* Contenido principal */
+.content {
     display: flex;
-    padding: 10px;
+    padding: 20px;
   }
-  
-  .content .left, .content .right {
+
+.left, .right {
     padding: 20px;
     border: 1px solid #ccc;
   }
-  
-  .content .left {
+
+.left {
     flex: 1;
     background-color: #fdffc0; /* Amarillo claro */
     text-align: center;
     margin-right: 10px;
   }
 
-  .left img{
+.left img {
     width: 100%;
     height: auto;
     display: block;
     border-radius: 5px;
   }
-  
-  .content .right {
+
+.right {
     flex: 2;
-    background-color: #fdffc0; /* Verde claro */
+    background-color: #ccffcc; /* Verde claro */
     border: 2px solid #004106;
   }
+  
   
   
