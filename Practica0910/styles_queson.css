@@ -5,17 +5,20 @@
     list-style: none;
     box-sizing: border-box;
 }
+body{
+    background-color: #FFF8E7;
+}
 nav{
-    background: #DAF7A6;
+    background: #004106;
     height: 100px;
     width: 100%;
 }
 #enlace_logo{
     position: absolute;
-    padding: 20px 50px;
+    padding: 0px 50px;
 }
 #logo{
-    height: 40px;
+    height: 95px;
 }
 nav ul{
     float: right;
@@ -27,13 +30,77 @@ nav ul li{
     margin: 0 6px;
 }
 nav ul li a{
-    color: black;
-    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #FFF8E7;
+    font-size: 95%;
     padding: 7px 13px;
     border-radius: 5px;
     text-transform: uppercase;
 }
+nav ul li ul.dropdown li{
+    display: block;
+}
+nav ul li ul.dropdown{
+    width: 23%;
+    background-color: #004106;
+    position: absolute;
+    z-index: 999;
+    display: none;
+}
 li a.active, li a:hover{
-    background: #a1e031;
+    background: #255f0e;
     transition: .4s;
+}
+ul li:hover ul.dropdown{
+    display: block;
+}
+main{
+    margin: 3% 15%;
+    width: 70%;
+    height: 80%;
+    background-color: #FFF8E7;
+    text-align: center;
+    padding: 20px;
+    border: solid 2px black;
+    border-radius: 8px;
+}
+h1{
+    font-size: 40px;
+    text-align: left;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 15px;
+}
+h2{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#carrito{
+    margin: 2% 0;
+    width: 65%;
+}
+#vacas{
+    margin: 2% 0;
+    width: 60%;
+}
+#maiz{
+    margin: 2% 0;
+    width: 60%;
+}
+#info_bio{
+    padding: 10px;
+    margin: 10px;
+    border: dashed 2px #2d59eb;
+}
+#info_biogas{
+    padding: 10px;
+    margin: 10px;
+    border: dashed 2px #2d59eb;
+}
+p{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 10px;
+    font-size: 25px;
+    text-align: justify;
+}
+footer{
+    background-color: #004106;
 }
