@@ -1,5 +1,5 @@
 *{
-    padding: o;
+    padding: 0;
     margin: 0;
     text-decoration: none;
     list-style: none;
@@ -27,7 +27,8 @@ nav ul{
 nav ul li{
     display: inline-block;
     line-height: 80px;
-    margin: 0 6px;
+    margin: 6px 6px;
+    border-radius: 5px;
 }
 nav ul li a{
     font-family: Arial, Helvetica, sans-serif;
@@ -47,7 +48,7 @@ nav ul li ul.dropdown{
     z-index: 999;
     display: none;
 }
-li a.active, li a:hover{
+li a.active, li:hover{
     background: #255f0e;
     transition: .4s;
 }
@@ -102,5 +103,64 @@ p{
     text-align: justify;
 }
 footer{
+    position: relative;
     background-color: #004106;
+    width: 100%;
+    min-height: 100px;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.social_icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin: 10px 5px;
+    flex-wrap: wrap;
+}
+.icon_elem{
+    list-style: none;
+}
+.icon{
+    color: #FFF8E7;
+    font-size: 34px;
+    display: inline-block;
+    margin: 0 15px;
+    transition: 0.5s;
+}
+.icon:hover{
+    transform: translateY(-10px);
+}
+.menu{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    align-items: center;
+    margin: 10px 0;
+    flex-wrap: wrap;
+}
+.menu_elem{
+    list-style: none;
+}
+.menu_icon{
+    color: #FFF8E7;
+    font-size: 22px;
+    display: inline-block;
+    text-decoration: none;
+    margin: 5px 10px;
+    opacity: 0.75;
+    transition: 0.4s;
+}
+.menu_icon:hover{
+    opacity: 1;
+}
+.text{
+    color: #FFF8E7;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    font-size: 22px;
 }
