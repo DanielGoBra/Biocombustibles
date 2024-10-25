@@ -71,7 +71,7 @@ a.button {
     border-radius: 5px;
   }
 
-.right {
+  .right {
     flex: 2;
     background-color: #ccffcc; /* Verde claro */
     border: 2px solid #004106;
@@ -86,8 +86,82 @@ a.button {
     margin-top: 20px; /* Espaciado superior para separar el video del texto */
     margin-bottom: 20px;
   }
-  
 
+  /* Página beneficios*/
+
+  .content_benef {
+    display: flex;
+    flex-direction: column ;
+    gap: 10px /* Espacio entre los elementos */
+    }
+
+  .left_benef {
+    padding: 10px;
+    border: 20px solid #004106;
+    display: flex;
+    align-items: center;
+    gap: 1px; /* Espacio entre la imagen y el texto */
+    background-color: #ccffcc; /* Verde claro */
+    text-align: left;
+    }
+
+    .right_benef {
+      padding: 10px;
+      border: 20px solid #004106;
+      display: flex;
+      align-items: center;
+      gap: 10px; /* Espacio entre la imagen y el texto */
+      background-color: #ccffcc; /* Verde claro */
+      text-align: left;
+      }
+
+      /* Pié de pagina*/
+
+      footer {
+        background-color: #f0f0f0; 
+        padding: 30px;
+        text-align: center;
+    }
+    
+    .footer-row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        margin-bottom: 20px; 
+    }
+    
+    .empresa-img {
+        width: 100px; 
+        height: auto;
+    }
+    
+    .redes-sociales {
+        display: flex;
+        gap: 10px; 
+    }
+    
+    .red-social {
+        width: 30px; 
+        height: 30px;
+    }
+    
+    .footer-links {
+        display: flex;
+        justify-content: center;
+        gap: 20px; 
+        flex-wrap: wrap;
+    }
+    
+    .footer-links a {
+        color: #808080; 
+        text-decoration: none;
+    }
+    
+    .footer-links a:hover {
+        color: #555555; 
+        text-decoration: underline;
+    }
   
   
   
