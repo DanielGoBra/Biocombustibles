@@ -8,29 +8,29 @@
 body{
     background-color: #FFF8E7;
 }
-nav{
+.nav_menu{
     background: #004106;
     height: 100px;
     width: 100%;
 }
-#enlace_logo{
-    position: absolute;
+.enlace_logo{
+    position: relative;
     padding: 0px 50px;
 }
 #logo{
     height: 95px;
 }
-nav ul{
+.list_menu{
     float: right;
     margin-right: 20px;
 }
-nav ul li{
+.item_menu{
     display: inline-block;
     line-height: 80px;
     margin: 6px 6px;
     border-radius: 5px;
 }
-nav ul li a{
+.a_menu{
     font-family: Arial, Helvetica, sans-serif;
     color: #FFF8E7;
     font-size: 95%;
@@ -48,7 +48,7 @@ nav ul li ul.dropdown{
     z-index: 999;
     display: none;
 }
-li a.active, li:hover{
+.item_menu:hover{
     background: #255f0e;
     transition: .4s;
 }
@@ -56,23 +56,27 @@ ul li:hover ul.dropdown{
     display: block;
 }
 main{
-    margin: 3% 15%;
+    margin: 3% 3%;
+    margin-right: 0;
     width: 70%;
     height: 80%;
     background-color: #FFF8E7;
     text-align: center;
-    padding: 20px;
-    border: solid 2px black;
+    padding: 15px;
     border-radius: 8px;
 }
 h1{
-    font-size: 40px;
+    font-size: 50px;
     text-align: left;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 15px;
+    text-shadow: 2px 2px 5px #6B8E23;
 }
 h2{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 20px 10px;
+    font-size: 35px;
+    text-shadow: 2px 2px 5px #e4a010;
 }
 #carrito{
     margin: 2% 0;
@@ -86,21 +90,56 @@ h2{
     margin: 2% 0;
     width: 60%;
 }
-#info_bio{
+#aguacate{
+    margin: 2% 0;
+    width: 60%;
+}
+.info_bio{
     padding: 10px;
     margin: 10px;
-    border: dashed 2px #2d59eb;
 }
-#info_biogas{
+.info_biogas{
     padding: 10px;
     margin: 10px;
-    border: dashed 2px #2d59eb;
 }
-p{
+.text_content{
     font-family: Arial, Helvetica, sans-serif;
     margin: 10px;
     font-size: 25px;
     text-align: justify;
+    line-height: 1.6;
+}
+.item_content{
+    list-style-type: disc;
+    margin-left: 80px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-right: 10px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-size: 25px;
+    text-align: left;
+    line-height: 1.6;
+}
+.img_content{
+    box-shadow: 5px 5px 10px #888888;
+    margin: 2% 0;
+}
+.aside_lateral{
+    padding: 15px;
+    margin: 20px 5px;
+    width: 25%;
+    position: relative;
+    float: right;
+}
+h3{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    margin: 10px;
+}
+iframe{
+    position: relative;
+    width: 100%;
+    height: 100%;
 }
 footer{
     position: relative;
@@ -134,7 +173,7 @@ footer{
 .icon:hover{
     transform: translateY(-10px);
 }
-.menu{
+.menu_footer{
     display: flex;
     justify-content: center;
     position: relative;
@@ -151,13 +190,13 @@ footer{
     display: inline-block;
     text-decoration: none;
     margin: 5px 10px;
-    opacity: 0.75;
+    opacity: 0.65;
     transition: 0.4s;
 }
 .menu_icon:hover{
     opacity: 1;
 }
-.text{
+.text_footer{
     color: #FFF8E7;
     text-align: center;
     margin-top: 15px;
