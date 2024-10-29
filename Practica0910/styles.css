@@ -162,6 +162,42 @@ a.button {
         color: #555555; 
         text-decoration: underline;
     }
+
+    /* Estilos generales para el formulario */
+form {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  background-color: #ccffcc;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+label {
+  margin: 10px 0 5px;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="date"] {
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+input[type="submit"] {
+  background-color: #fdffc0;
+  color: rgb(5, 5, 5);
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+input[type="submit"]:hover {
+  background-color: #004106;
+}
   
   
   
