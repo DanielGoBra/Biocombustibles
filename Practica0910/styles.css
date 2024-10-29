@@ -11,6 +11,15 @@
     font-family: Arial, sans-serif;
     background-color: #f9f9f9;
   }
+
+  body{
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+
+  footer {
+    margin-top: 5px;
+  }
   .navbar {
     display: flex;
     justify-content: space-between;
@@ -78,7 +87,7 @@ a.button {
   }
 
   .right iframe {
-    width: 100%; /*Hace que el video ocupe todo el ancho de la sección*/
+    width: 100%; /* Hace que el video ocupe todo el ancho de la sección*/
     height: auto; /*Mantiene la altura automática */
     max-height: 315px; /*Altura máxima del video, ajusta según sea necesario*/
     border-radius: 5px;
