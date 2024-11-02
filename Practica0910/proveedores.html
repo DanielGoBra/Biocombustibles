@@ -1,11 +1,204 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Clientes y Proveedores</title>
+    <link rel="icon" href="logo_titulo.png">
+    <link rel="stylesheet" href="css/styles_proveedores.css">
 </head>
 <body>
-    
+    <header>
+        <nav class="nav_menu">
+            <a href="biocombustibles.html" class="enlace_logo">
+                <img src="images/logo4.jpg" alt="Logo Bioenergy" id="logo">
+            </a>
+            <ul class="list_menu">
+                <li class="item_menu"><a class="a_menu" href="antecedentes.html">Antecedentes</a></li>
+                <li class="item_menu">
+                    <a class="a_menu" href="queson.html">¿Qué son los biocombustibles?</a>
+                    <ul class="dropdown">
+                        <li class="item_menu">
+                            <a class="a_menu" href="beneficios.html">Beneficios de los biocombustibles</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="item_menu"><a class="a_menu" href="proveedores.html">Proveedores y Clientes</a></li>
+                <li class="item_menu"><a class="a_menu" href="formulario.html">Calcula tu consumo</a></li>
+                <li class="item_menu"><a class="a_menu" href="contacto.html">Contactanos</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>
+            CONOCE A NUESTROS CLIENTES Y PROVEEDORES
+        </h1>
+        <div class="boton_mostrar">
+            <button onclick="mostrar_contenido_cliente()" class="button_content" id="button1">
+                NUESTROS CLIENTES
+            </button>
+        </div>
+        <section class="section_clientes" id="contenido_cliente">
+            <h2>
+                Clientes Potenciales de Biocombustibles en Sectores Rurales
+            </h2>
+            <p class="text_content">
+                El uso de biocombustibles en el sector rural puede generar múltiples beneficios, tanto económicos como ambientales. Los principales clientes potenciales son:
+            </p>
+            <ol class="list_clientes">
+                <li class="item_clientes">
+                    <h3>1. Agricultores</h3>
+                    <p class="text_content">
+                        Pequeños y medianos agricultores que pueden utilizar biocombustibles para alimentar maquinaria agrícola, sistemas de riego y 
+                        calefacción en invernaderos. El uso de biogás reduce costos operativos y la dependencia de combustibles fósiles.
+                    </p>
+                </li>
+                <li class="item_clientes">
+                    <h3>2. Cooperativas Rurales</h3>
+                    <p class="text_content">
+                        Organizaciones que agrupan a pequeños productores agrícolas. Estas cooperativas pueden implementar biodigestores comunitarios para generar energía de manera compartida, 
+                        permitiendo a sus miembros beneficiarse de una fuente de energía limpia y económica.
+                    </p>
+                </li>
+                <li class="item_clientes">
+                    <h3>3. Pequeñas Empresas de Transporte</h3>
+                    <p class="text_content">
+                        Negocios locales que operan vehículos y que podrían utilizar biogás como alternativa al diésel o la gasolina. 
+                        El uso de biogás ayuda a reducir costos de operación y disminuye las emisiones contaminantes asociadas al transporte.
+                    </p>
+                </li>
+                <li class="item_clientes">
+                    <h3>4. Porcicultores</h3>
+                    <p class="text_content">
+                        Las granjas de cerdos que producen estiércol no solo son proveedores de materia prima, sino que también pueden ser clientes del biogás, utilizándolo 
+                        para calefacción o energía en sus instalaciones, mejorando así la eficiencia energética de sus operaciones.
+                    </p>
+                </li>
+                <li class="item_clientes">
+                    <h3>5. Viviendas Rurales</h3>
+                    <p class="text_content">
+                        Hogares ubicados en áreas remotas donde el acceso a la red eléctrica es limitado. Estos hogares pueden utilizar biogás para cocinar e iluminar, lo que mejora 
+                        significativamente su calidad de vida y reduce su dependencia de fuentes de energía tradicionales.
+                    </p>
+                </li>
+                <li class="item_clientes">
+                    <h3>6. Microempresas y Talleres Artesanales</h3>
+                    <p class="text_content">
+                        Pequeños talleres y microempresas que pueden beneficiarse del biogás para alimentar procesos de producción que requieren energía térmica o eléctrica. 
+                        Esto no solo reduce costos, sino que también contribuye a la sostenibilidad de sus operaciones.
+                </li>
+                <li class="item_clientes">
+                    <h3>7. Sistemas de riego</h3>
+                    <p class="text_content">
+                        Instalaciones agrícolas que utilizan biocombustibles para operar bombas de riego. El biogás proporciona una 
+                        fuente de energía renovable que puede reducir costos de energía y mejorar la sostenibilidad en la gestión del agua.
+                    </p>
+                </li>
+            </ol>
+        </section>
+        <div class="boton_mostrar">
+            <button onclick="mostrar_contenido_proveedor()" class="button_content" id="button2">
+                NUESTROS PROVEEDORES
+            </button>
+        </div>
+        <section class="section_proveedores" id="contenido_proveedor">
+            <h2>
+                Proveedores de Materia Prima para Biocombustibles
+            </h2>
+            <p class="text_content">
+                La identificación de proveedores locales de materia prima para biocombustibles es fundamental para el desarrollo de una cadena de suministro sostenible y eficiente. 
+                A continuación, se detallan las principales fuentes de materia prima y estrategias para localizar a los proveedores:
+            </p>
+            <ol class="list_clientes">
+                <li class="item_clientes">
+                    <h3>1. Porcicultores</h3>
+                    <p class="text_content">
+                        Granjas que crían cerdos producen grandes cantidades de estiércol, que es un recurso valioso para la producción de biogás. Este estiércol se puede procesar en biodigestores, 
+                        donde se descompone anaeróbicamente para liberar metano, que luego puede ser utilizado como fuente de energía.
+                    </p>
+                </li>
+                <img src="images/proveedores y clientes/porcicultores.png" alt="">
+                <li class="item_clientes">
+                    <h3>2. Agricultores de Maiz</h3>
+                    <p class="text_content">
+                        Los agricultores que cultivan maíz generan tanto el grano como los residuos de la planta (como tallos y hojas), que pueden ser utilizados para la producción de biocombustibles. 
+                        El maíz es una materia prima común para la producción de bioetanol, mientras que los residuos se pueden utilizan en biodigestores para generar biogás.
+                    </p>
+                </li>
+                <img src="images/proveedores y clientes/agricultor_maiz.png" alt="">
+                <li class="item_clientes">
+                    <h3>3. Productores de Caña de Azucar</h3>
+                    <p class="text_content">
+                        Los agricultores que cultivan caña de azúcar pueden aprovechar el bagazo (el residuo fibroso después de extraer el jugo) y la melaza como materia prima para la producción de biocombustibles. 
+                        Estos subproductos pueden ser fermentados para producir bioetanol o utilizados en biodigestores para generar biogás.
+                    </p>
+                </li>
+                <img src="images/proveedores y clientes/prodcutor_caña.png" alt="">
+                <li class="item_clientes">
+                    <h3>4. Agricultores de Residuos Agricolas</h3>
+                    <p class="text_content">
+                        Este grupo incluye a los productores que generan residuos de cultivos, como paja, hojas y otros desechos orgánicos. Estos residuos pueden ser recolectados 
+                        y utilizados en biodigestores, contribuyendo a la producción de biogás y mejorando la gestión de residuos agrícolas.
+                    </p>
+                </li>
+                <img src="images/proveedores y clientes/residuos_agricolas.png" alt="">
+                <li class="item_clientes">
+                    <h3>5. Cooperativas Agricolas</h3>
+                    <p class="text_content">
+                        Agrupaciones de agricultores que pueden unirse para coordinar la recolección y el procesamiento de materia prima para biocombustibles. Las cooperativas pueden facilitar 
+                        la inversión en tecnologías de producción de biogás y compartir los beneficios de la energía producida.
+                    </p>
+                </li>
+                <img src="images/proveedores y clientes/cooperativa_agricola.png" alt="">
+                <li class="item_clientes">
+                    <h3>6. Empresas de Gestion de Residuos</h3>
+                    <p class="text_content">
+                        Compañías que se especializan en la recolección y tratamiento de desechos orgánicos. Estas empresas pueden transformar residuos 
+                        de la industria alimentaria, residuos municipales y otros desechos orgánicos en biogás a través de procesos de digestión anaeróbica.
+                </li>
+                <img src="images/proveedores y clientes/empresa_residuos.png" alt="">
+            </ol>
+        </section>
+    </main>
+    <footer class="footer">
+        <ul class="social_icon">
+            <li class="icon_elem">
+                <a href="" class="icon">
+                    <ion-icon name="logo-youtube"></ion-icon>
+                </a>
+            </li>
+            <li class="icon_elem">
+                <a href="" class="icon">
+                    <ion-icon name="logo-instagram"></ion-icon>     
+                </a>
+            </li>
+            <li class="icon_elem">
+                <a href="" class="icon">
+                    <ion-icon name="mail-outline"></ion-icon>
+                </a>
+            </li>
+            <li class="icon_elem">
+                <a href="" class="icon">
+                    <ion-icon name="logo-whatsapp"></ion-icon>
+                </a>
+            </li>
+        </ul>
+        <ul class="menu_footer">
+            <li class="menu_elem">
+                <a href="biocombustibles.html" class="menu_icon">Inicio</a>
+            </li>
+            <li class="menu_elem">
+                <a href="" class="menu_icon">Equipo</a>
+            </li><li class="menu_elem">
+                <a href="contacto.html" class="menu_icon">Contacto</a>
+            </li><li class="menu_elem">
+                <a href="" class="menu_icon">Sobre Nosotros</a>
+            </li> 
+        </ul>
+        <p class="text_footer">@2024  |  BIOENERGY</p>
+    </footer>
+    <script src="script/proveedores_script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script> 
 </body>
 </html>
