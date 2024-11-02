@@ -87,52 +87,6 @@ a.button {
     margin-bottom: 20px;
   }
 
-  .footer-main {
-    background-color: #ccffcc; 
-    color: #080808; 
-    padding: 40px 20px;
-    text-align: center;
-}
-
-.footer-main h2 {
-    font-size: 24px;
-    margin-bottom: 20px;
-}
-
-.footer-main p {
-    font-size: 16px;
-    line-height: 1.6;
-    text-align: justify;
-    max-width: 800px;
-    margin: 0 auto; /* Centrar el contenido */
-}
-
-.footer-main section {
-    margin-bottom: 20px;
-}
-
-.footer-main p:last-child {
-    margin-bottom: 0;
-}
-
-.footer-main a {
-    color: #ffcc80; /* Color de enlace */
-    text-decoration: none;
-}
-
-.footer-main a:hover {
-    color: #004106; 
-    text-decoration: underline;
-}
-
-.footer-copyright {
-  text-align: center;
-  margin-top: 30px;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-}
-
   /* Página beneficios*/
 
   .content_benef {
@@ -161,54 +115,7 @@ a.button {
       text-align: left;
       }
 
-      /* Pié de pagina*/
-
-      footer {
-        background-color: #f0f0f0; 
-        padding: 30px;
-        text-align: center;
-    }
     
-    .footer-row {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        flex-wrap: wrap;
-        margin-bottom: 20px; 
-    }
-    
-    .empresa-img {
-        width: 100px; 
-        height: auto;
-    }
-    
-    .redes-sociales {
-        display: flex;
-        gap: 10px; 
-    }
-    
-    .red-social {
-        width: 30px; 
-        height: 30px;
-    }
-    
-    .footer-links {
-        display: flex;
-        justify-content: center;
-        gap: 20px; 
-        flex-wrap: wrap;
-    }
-    
-    .footer-links a {
-        color: #808080; 
-        text-decoration: none;
-    }
-    
-    .footer-links a:hover {
-        color: #555555; 
-        text-decoration: underline;
-    }
-
     /* Estilos generales para el formulario */
 form {
   display: flex;

@@ -3,9 +3,93 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Registro de Datos de Biocombustibles</title>
+    <link rel="icon" href="images/logo_titulo.png">
+    <link rel="stylesheet" href="css/styles_general.css">
+    <link rel="stylesheet" href="css/styles.css"> 
 </head>
 <body>
+    <header>
+        <nav class="nav_menu">
+            <a href="index.html" class="enlace_logo">
+                <img src="images/logo4.jpg" alt="Logo Bioenergy" id="logo">
+            </a>
+            <ul class="list_menu">
+                <li class="item_menu"><a class="a_menu" href="antecedentes.html">Antecedentes</a></li>
+                <li class="item_menu">
+                    <a class="a_menu" href="queson.html">¿Qué son los biocombustibles?</a>
+                    <ul class="dropdown">
+                        <li class="item_menu">
+                            <a class="a_menu" href="beneficios.html">Beneficios de los biocombustibles</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="item_menu"><a class="a_menu" href="proveedores.html">Proveedores y Clientes</a></li>
+                <li class="item_menu"><a class="a_menu" href="contacto.html">Contáctanos</a></li>
+            </ul>
+        </nav>
+    </header>
     
+        <h1>Registro de Datos de Biocombustibles</h1>
+
+    <main class="content">
+        <form id="biofuelForm">
+            <label for="name">Nombre del Usuario:</label>
+            <input type="text" id="name" name="name" required><br><br>
+
+            <label for="fuelType">Tipo de Biocombustible:</label>
+            <input type="text" id="fuelType" name="fuelType" required><br><br>
+
+            <label for="quantity">Cantidad Utilizada (en litros):</label>
+            <input type="number" id="quantity" name="quantity" required><br><br>
+
+            <label for="date">Fecha:</label>
+            <input type="date" id="date" name="date" required><br><br>
+
+            <input type="submit" value="Registrar">
+        </form>
+    </main>
+
+    <footer class="footer">
+        <ul class="social_icon">
+            <li class="icon_elem">
+                <a href="" class="icon">
+                    <ion-icon name="logo-youtube"></ion-icon>
+                </a>
+            </li>
+            <li class="icon_elem">
+                <a href="" class="icon">
+                    <ion-icon name="logo-instagram"></ion-icon>     
+                </a>
+            </li>
+            <li class="icon_elem">
+                <a href="" class="icon">
+                    <ion-icon name="mail-outline"></ion-icon>
+                </a>
+            </li>
+            <li class="icon_elem">
+                <a href="" class="icon">
+                    <ion-icon name="logo-whatsapp"></ion-icon>
+                </a>
+            </li>
+        </ul>
+        <ul class="menu_footer">
+            <li class="menu_elem">
+                <a href="index.html" class="menu_icon">Inicio</a>
+            </li>
+            <li class="menu_elem">
+                <a href="" class="menu_icon">Equipo</a>
+            </li><li class="menu_elem">
+                <a href="contacto.html" class="menu_icon">Contacto</a>
+            </li><li class="menu_elem">
+                <a href="" class="menu_icon">Sobre Nosotros</a>
+            </li> 
+        </ul>
+        <p class="text_footer">@2024  |  BIOENERGY</p>
+    </footer>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>   
+
+    <script src="script.js"></script>
 </body>
 </html>
