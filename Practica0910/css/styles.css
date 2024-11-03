@@ -35,14 +35,14 @@
   }
 
 a.button {
-    display: inline-block; /* Permite que los <a> se comporten como botones */
+    display: inline-block; 
   }
 
 /* Encabezado */
 .header {
     text-align: center;
     padding: 20px;
-    background-color: #004106; /* Verde */
+    background-color: #004106; 
     color: #fdffc0;
   }
 
@@ -54,14 +54,14 @@ a.button {
     padding: 20px;
   }
 
-.left, .right {
+.left {
     padding: 20px;
     border: 1px solid #ccc;
   }
 
 .left {
     flex: 1;
-    background-color: #fdffc0; /* Amarillo claro */
+    background-color: #fdffc0; 
     text-align: center;
     margin-right: 10px;
   }
@@ -75,17 +75,20 @@ a.button {
 
   .right {
     flex: 2;
-    background-color: #ccffcc; /* Verde claro */
+    padding: 40px;
+    background-color: #ccffcc; 
     border: 2px solid #004106;
+    text-align: center; 
+    font-size: 24px; 
+    font-weight: bold; 
+    margin-bottom: 2%; 
   }
 
   .right iframe {
-    width: 100%; /* Hace que el video ocupe todo el ancho de la sección */
-    height: 55%; /* Ajusta la altura */
-    max-height: 100%; /* Intento ajustar la altura maxima */
-    max-width: 100%; /* Ajusta el ancho máximo según sea necesario */
+    width: 100%; 
+    height: 600px; 
     border-radius: 5px;
-    margin-top: 20px; /* Espaciado superior para separar el video del texto */
+    margin-top: 10px; 
     margin-bottom: 20px;
   }
 
@@ -94,7 +97,7 @@ a.button {
   .content_benef {
     display: flex;
     flex-direction: column ;
-    gap: 10px /* Espacio entre los elementos */
+    gap: 10px 
     }
 
   .left_benef {
@@ -102,20 +105,50 @@ a.button {
     border: 20px solid #004106;
     display: flex;
     align-items: center;
-    gap: 1px; /* Espacio entre la imagen y el texto */
-    background-color: #ccffcc; /* Verde claro */
+    gap: 1px; 
+    background-color: #ccffcc; 
     text-align: left;
     }
+
+    @keyframes palpitar {
+      0%, 100% {
+          transform: scale(1);
+      }
+      50% {
+          transform: scale(1.1);
+      }
+  }
+  
+  .left_benef p {
+      animation: palpitar 1s infinite;
+      animation-duration: 1s;
+      animation-iteration-count: 3;
+  }
+    .left_benef p {
+      transition: transform 0.2s ease; 
+  }
+  
+  .left_benef p:hover {
+      transform: scale(1.10);
+  }
 
     .right_benef {
       padding: 10px;
       border: 20px solid #004106;
       display: flex;
       align-items: center;
-      gap: 10px; /* Espacio entre la imagen y el texto */
-      background-color: #ccffcc; /* Verde claro */
+      gap: 10px; 
+      background-color: #ccffcc; 
       text-align: left;
       }
+
+      .right_benef {
+        transition: transform 0.3s ease; /* Suaviza el efecto de zoom */
+    }
+    
+    .right_benef:hover {
+        transform: scale(1.05); /* Ajusta el nivel de zoom según sea necesario */
+    }
 
     
     /* Estilos generales para el formulario */
