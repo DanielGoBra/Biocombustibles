@@ -1,146 +1,158 @@
 /* Reset */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  html, body {
-    height: 100%;
-    width: 100%;
-    font-family: Arial, sans-serif;
-    background-color: #f9f9f9;
-  }
-  .navbar {
-    display: flex;
-    justify-content: space-between;
-    padding: 10px;
-    background-color: #ffcc80; /* Naranja claro */
-  }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  background-color: #ffcc80; /* Naranja claro */
+}
 
 .navbar .button {
-    flex: 1;
-    text-align: center;
-    padding: 15px;
-    margin: 0 5px;
-    background-color: #fdffc0; /* Amarillo claro */
-    border: 1px solid #ccc;
-    color: black;
-    text-decoration: none; /* Sin subrayado para el enlace */
-    cursor: pointer;
-  }
+  flex: 1;
+  text-align: center;
+  padding: 15px;
+  margin: 0 5px;
+  background-color: #fdffc0; /* Amarillo claro */
+  border: 1px solid #ccc;
+  color: black;
+  text-decoration: none; /* Sin subrayado para el enlace */
+  cursor: pointer;
+}
 
 .navbar .button:hover {
-    background-color: #ffdd99; /* Cambia el color al pasar el mouse */
-  }
+  background-color: #ffdd99; /* Cambia el color al pasar el mouse */
+}
 
 a.button {
-    display: inline-block; /* Permite que los <a> se comporten como botones */
-  }
+  display: inline-block; /* Permite que los <a> se comporten como botones */
+}
 
 /* Encabezado */
 .header {
-    text-align: center;
-    padding: 20px;
-    background-color: #004106; /* Verde */
-    color: #fdffc0;
-  }
+  text-align: center;
+  padding: 20px;
+  background-color: #004106; /* Verde */
+  color: #fdffc0;
+}
 
 /* Contenido principal */
-
-
 .content {
-    display: flex;
-    padding: 20px;
-  }
+  display: flex;
+  padding: 20px;
+}
 
 .left, .right {
-    padding: 20px;
-    border: 1px solid #ccc;
-  }
+  padding: 20px;
+  border: 1px solid #ccc;
+}
 
 .left {
-    flex: 1;
-    background-color: #fdffc0; /* Amarillo claro */
-    text-align: center;
-    margin-right: 10px;
-  }
+  position: relative;
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  flex: 1;
+  background-color: #fdffc0; /* Amarillo claro */
+  text-align: center;
+  margin-right: 10px;
+  overflow: hidden; /* Oculta cualquier contenido desbordado */
+}
 
-.left img {
-    width: 100%;
-    height: auto;
-    display: block;
-    border-radius: 5px;
-  }
+.left img.zoom {
+  transition: transform 0.3s ease; /* Añadir unidades de tiempo */
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 5px;
+}
 
-  .right {
-    flex: 2;
-    background-color: #ccffcc; /* Verde claro */
-    border: 2px solid #004106;
-  }
+.left img.zoom:hover {
+  transform: scale(1.1); /* Aumenta el tamaño de la imagen al 110% */
+}
 
-  .right iframe {
-    width: 100%; /* Hace que el video ocupe todo el ancho de la sección */
-    height: 55%; /* Ajusta la altura */
-    max-height: 100%; /* Intento ajustar la altura maxima */
-    max-width: 100%; /* Ajusta el ancho máximo según sea necesario */
-    border-radius: 5px;
-    margin-top: 20px; /* Espaciado superior para separar el video del texto */
-    margin-bottom: 20px;
-  }
+.right {
+  flex: 2;
+  background-color: #ccffcc; /* Verde claro */
+  border: 2px solid #004106;
+}
 
-  /* Página beneficios*/
+.right iframe {
+  width: 100%; 
+  height: 55%; 
+  max-height: 100%; 
+  max-width: 100%; 
+  border-radius: 5px;
+  margin-top: 20px; 
+  margin-bottom: 20px;
+}
 
-  .content_benef {
-    display: flex;
-    flex-direction: column ;
-    gap: 10px /* Espacio entre los elementos */
-    }
+/* Página beneficios */
+.content_benef {
+  display: flex;
+  flex-direction: column;
+  gap: 10px; /* Espacio entre los elementos */
+}
 
-  .left_benef {
-    padding: 10px;
-    border: 20px solid #004106;
-    display: flex;
-    align-items: center;
-    gap: 1px; /* Espacio entre la imagen y el texto */
-    background-color: #ccffcc; /* Verde claro */
-    text-align: left;
-    }
+.left_benef {
+  padding: 10px;
+  border: 20px solid #004106;
+  display: flex;
+  align-items: center;
+  gap: 1px; /* Espacio entre la imagen y el texto */
+  background-color: #ccffcc; /* Verde claro */
+  text-align: left;
+}
 
-    .right_benef {
-      padding: 10px;
-      border: 20px solid #004106;
-      display: flex;
-      align-items: center;
-      gap: 10px; /* Espacio entre la imagen y el texto */
-      background-color: #ccffcc; /* Verde claro */
-      text-align: left;
-      }
+.right_benef {
+  padding: 10px;
+  border: 20px solid #004106;
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Espacio entre la imagen y el texto */
+  background-color: #ccffcc; /* Verde claro */
+  text-align: left;
+}
 
-    
-    /* Estilos generales para el formulario */
+/* Estilos generales para el formulario */
 form {
   display: flex;
   flex-direction: column;
   padding: 20px;
   background-color: #ccffcc;
-  border: 1px solid #ccc;
+  border: 1px hidden;
   border-radius: 5px;
+  width: 100%; 
+  max-width: 600px; 
+  margin: 0 auto; 
 }
-
+  
 label {
   margin: 10px 0 5px;
 }
-
- input[type="text"],
- input[type="text"],
- input[type="text"] {
+  
+input[type="text"],
+input[type="email"],
+textarea {
   padding: 10px;
   margin-bottom: 15px;
   border: 1px solid #ccc;
   border-radius: 4px;
+  width: 100%; /* Asegura que los recuadros ocupen todo el ancho del formulario */
+  box-sizing: border-box;
 }
-
+  
 input[type="submit"] {
   background-color: #fdffc0;
   color: rgb(5, 5, 5);
@@ -149,22 +161,21 @@ input[type="submit"] {
   cursor: pointer;
   border-radius: 4px;
 }
-
+  
 input[type="submit"]:hover {
   background-color: #004106;
 }
-  
-/*Tarjetas en antecedentes*/
 
+/* Tarjetas en antecedentes */
 .cards {
   display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 50px;
-    background-color: #004106;
-    margin: 20px 0;
-    padding: 20px;
-    border-radius: 10px;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  background-color: #004106;
+  margin: 20px 0;
+  padding: 20px;
+  border-radius: 10px;
 }
 
 .flip-card {
@@ -172,7 +183,7 @@ input[type="submit"]:hover {
   width: 200px;
   height: 200px;
   perspective: 1000px;
-  border: 2px solid white ;
+  border: 2px solid white;
 }
 
 .flip-card-inner {
@@ -194,7 +205,7 @@ input[type="submit"]:hover {
   position: absolute;
   width: 100%;
   height: 100%;
-  -webkit-backface-visibility: hidden; 
+  -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
 }
 
@@ -204,7 +215,7 @@ input[type="submit"]:hover {
 }
 
 .flip-card-back {
-  background-color:#ccffcc;
+  background-color: #ccffcc;
   color: black;
   transform: rotateY(180deg);
 }
@@ -214,17 +225,8 @@ input[type="submit"]:hover {
   height: 100%;
 }
 
-/* Efecto de agrandar la imagen al pasar el mouse */
-.zoom {
-  transition: transform 0.3s ease; 
-}
-
-.zoom:hover {
-  transform: scale(1.1); /* Aumenta el tamaño de la imagen al 110% */
-}
 
 /* Estilos para la sección ¿Quienes somos? */
-
 .section {
   background-color: #ccffcc;
   padding: 20px;
@@ -267,48 +269,58 @@ input[type="submit"]:hover {
   transform: scale(1.1);
 }
 
-
-
 /* Estilos para "Contáctanos" y "Usos" */
 h1, h2 {
-  font-size: 36px; /* Tamaño de fuente */
-  font-weight: bold; /* Negrita */
-  color: black; /* Color del texto */
-  text-shadow: 2px 2px 5px #aaa; /* Sombra del texto */
-  text-align: center; /* Centramos el texto */
-  margin-bottom: 20px; /* Espacio abajo */
+  font-size: 36px; 
+  font-weight: bold; 
+  color: black; 
+  text-shadow: 2px 2px 5px #aaa; 
+  text-align: center; 
+  margin-bottom: 20px; 
 }
 
 /* Estilos para las secciones */
-.welcome-section, .testimonials {
-  background-color: #ccffcc; /* Verde claro */
+.welcome-section, .testimonials, .chart-section {
+  background-color: #ccffcc; 
   padding: 20px;
-  border: 1px solid #ccc;
+  border: 1px hidden;
   border-radius: 5px;
-  margin-bottom: 20px; /* Espacio debajo de cada sección */
-  width: 80%; /* Ajusta el ancho */
-  margin: 0 auto; /* Centra la sección */
-  text-align: center; /* Centra el texto */
+  margin-bottom: 20px; 
+  width: 80%; 
+  margin: 0 auto; 
+  text-align: center; 
 }
+
 
 .testimonials iframe {
-  border-radius: 5px; /* Bordes redondeados para el video */
-  display: block; /* Asegura que el video se trate como un bloque */
-  margin: 0 auto; /* Centra el video */
+  border-radius: 5px; 
+  display: block; 
+  margin: 0 auto;
 }
 
+/* Estilos para mensajes de error */
 .error-message {
-  color: red;
+  color: #fdffc0;
   font-size: 0.9em;
-  margin-top: 5px;
+  margin-top: 4px;
 }
 
-.success-message {
-  color: green;
+/* Cambia el color del borde de los campos con error */
+input:invalid, textarea:invalid {
+  border-color: #fdffc0;
+}
+
+/* Estilos para el indicador de carga */
+#loadingIndicator {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #fdffc0;
+  padding: 10px 20px;
+  border-radius: 5px;
   font-size: 1.2em;
-  margin-top: 5px;
-  display: inline-block;
-  margin-left: 10px;
 }
 
 
