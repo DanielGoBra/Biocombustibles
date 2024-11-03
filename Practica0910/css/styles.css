@@ -36,16 +36,16 @@ html, body {
 }
 
 a.button {
-  display: inline-block; /* Permite que los <a> se comporten como botones */
-}
+    display: inline-block; /* Permite que los <a> se comporten como botones */
+  }
 
 /* Encabezado */
 .header {
-  text-align: center;
-  padding: 20px;
-  background-color: #004106; /* Verde */
-  color: #fdffc0;
-}
+    text-align: center;
+    padding: 20px;
+    background-color: #004106; /* Verde */
+    color: #fdffc0;
+  }
 
 /* Contenido principal */
 .content {
@@ -54,21 +54,16 @@ a.button {
 }
 
 .left, .right {
-  padding: 20px;
-  border: 1px solid #ccc;
-}
+    padding: 20px;
+    border: 1px solid #ccc;
+  }
 
 .left {
-  position: relative;
-  width: 100%;
-  max-width: 600px;
-  margin: 0 auto;
-  flex: 1;
-  background-color: #fdffc0; /* Amarillo claro */
-  text-align: center;
-  margin-right: 10px;
-  overflow: hidden; /* Oculta cualquier contenido desbordado */
-}
+    flex: 1;
+    background-color: #fdffc0; /* Amarillo claro */
+    text-align: center;
+    margin-right: 10px;
+  }
 
 .left img.zoom {
   transition: transform 0.3s ease; /* Añadir unidades de tiempo */
@@ -82,50 +77,52 @@ a.button {
   transform: scale(1.1); /* Aumenta el tamaño de la imagen al 110% */
 }
 
-.right {
-  flex: 2;
-  background-color: #ccffcc; /* Verde claro */
-  border: 2px solid #004106;
-}
+  .right {
+    flex: 2;
+    background-color: #ccffcc; /* Verde claro */
+    border: 2px solid #004106;
+  }
 
-.right iframe {
-  width: 100%; 
-  height: 55%; 
-  max-height: 100%; 
-  max-width: 100%; 
-  border-radius: 5px;
-  margin-top: 20px; 
-  margin-bottom: 20px;
-}
+  .right iframe {
+    width: 100%; /* Hace que el video ocupe todo el ancho de la sección */
+    height: 55%; /* Ajusta la altura */
+    max-height: 100%; /* Intento ajustar la altura maxima */
+    max-width: 100%; /* Ajusta el ancho máximo según sea necesario */
+    border-radius: 5px;
+    margin-top: 20px; /* Espaciado superior para separar el video del texto */
+    margin-bottom: 20px;
+  }
 
-/* Página beneficios */
-.content_benef {
-  display: flex;
-  flex-direction: column;
-  gap: 10px; /* Espacio entre los elementos */
-}
+  /* Página beneficios*/
 
-.left_benef {
-  padding: 10px;
-  border: 20px solid #004106;
-  display: flex;
-  align-items: center;
-  gap: 1px; /* Espacio entre la imagen y el texto */
-  background-color: #ccffcc; /* Verde claro */
-  text-align: left;
-}
+  .content_benef {
+    display: flex;
+    flex-direction: column ;
+    gap: 10px /* Espacio entre los elementos */
+    }
 
-.right_benef {
-  padding: 10px;
-  border: 20px solid #004106;
-  display: flex;
-  align-items: center;
-  gap: 10px; /* Espacio entre la imagen y el texto */
-  background-color: #ccffcc; /* Verde claro */
-  text-align: left;
-}
+  .left_benef {
+    padding: 10px;
+    border: 20px solid #004106;
+    display: flex;
+    align-items: center;
+    gap: 1px; /* Espacio entre la imagen y el texto */
+    background-color: #ccffcc; /* Verde claro */
+    text-align: left;
+    }
 
-/* Estilos generales para el formulario */
+    .right_benef {
+      padding: 10px;
+      border: 20px solid #004106;
+      display: flex;
+      align-items: center;
+      gap: 10px; /* Espacio entre la imagen y el texto */
+      background-color: #ccffcc; /* Verde claro */
+      text-align: left;
+      }
+
+    
+    /* Estilos generales para el formulario */
 form {
   display: flex;
   flex-direction: column;
