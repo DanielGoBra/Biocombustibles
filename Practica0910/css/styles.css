@@ -58,24 +58,29 @@ a.button {
     border: 1px solid #ccc;
   }
 
-.left {
+  .left {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
     flex: 1;
     background-color: #fdffc0; /* Amarillo claro */
     text-align: center;
     margin-right: 10px;
+    overflow: hidden; 
   }
-
-.left img.zoom {
-  transition: transform 0.3s ease; /* Añadir unidades de tiempo */
-  width: 100%;
-  height: auto;
-  display: block;
-  border-radius: 5px;
-}
-
-.left img.zoom:hover {
-  transform: scale(1.1); /* Aumenta el tamaño de la imagen al 110% */
-}
+  
+  .left img.zoom {
+    transition: transform 0.3s ease; /* Añadir unidades de tiempo */
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 5px;
+  }
+  
+  .left img.zoom:hover {
+    transform: scale(1.1); 
+  }
 
   .right {
     flex: 2;
